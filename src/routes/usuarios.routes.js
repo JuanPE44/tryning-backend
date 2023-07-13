@@ -17,9 +17,6 @@ router.get("/usuarios", getUsuarios);
 // Ruta para obtener un usuario específico por su ID
 router.get("/usuarios/:idUsuario", getUsuario);
 
-// Ruta para crear un nuevo usuario
-router.post("/usuarios", postUsuario);
-
 // Ruta para actualizar un usuario existente por su ID
 router.patch("/usuarios/:idUsuario", patchUsuario);
 
