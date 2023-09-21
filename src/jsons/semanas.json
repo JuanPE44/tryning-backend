@@ -1,0 +1,56 @@
+[
+  {
+    "id": 100,
+    "id_plan": 1,
+    "numero_dia": 1,
+    "numero_semana": 1
+  },
+  {
+    "id": 101,
+    "id_plan": 1,
+    "numero_dia": 2,
+    "numero_semana": 1
+  },
+  {
+    "id": 102,
+    "id_plan": 1,
+    "numero_dia": 3,
+    "numero_semana": 1
+  },
+  {
+    "id": 103,
+    "id_plan": 1,
+    "numero_dia": 1,
+    "numero_semana": 2
+  },
+  {
+    "id": 104,
+    "id_plan": 1,
+    "numero_dia": 1,
+    "numero_semana": 2
+  },
+  {
+    "id": 105,
+    "id_plan": 1,
+    "numero_dia": 1,
+    "numero_semana": 2
+  },
+  {
+    "id": 106,
+    "id_plan": 1,
+    "numero_dia": 1,
+    "numero_semana": 3
+  },
+  {
+    "id": 107,
+    "id_plan": 1,
+    "numero_dia": 1,
+    "numero_semana": 3
+  },
+  {
+    "id": 108,
+    "id_plan": 1,
+    "numero_dia": 1,
+    "numero_semana": 3
+  }
+]

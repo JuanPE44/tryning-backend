@@ -1,0 +1,114 @@
+[
+  {
+    "dia_id": 100,
+    "ejercicio": "press plano",
+    "categoria": "PECHO",
+    "repeticiones": 3,
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 100,
+    "ejercicio": "jalon neutro",
+    "categoria": "ESPALDA",
+    "repeticiones": 3,
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 101,
+    "ejercicio": "jalon",
+    "categoria": "HOMBROS",
+    "repeticiones": 3,
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 101,
+    "ejercicio": "sentadilla pendular",
+    "categoria": "ISQUIOS",
+    "repeticiones": 3,
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 101,
+    "ejercicio": "vuelos laterales",
+    "repeticiones": 3,
+    "categoria": "CUADRICEPS",
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 102,
+    "ejercicio": "vuelos laterales",
+    "repeticiones": 3,
+    "categoria": "BICEPS",
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 102,
+    "ejercicio": "vuelos laterales",
+    "repeticiones": 3,
+    "categoria": "PECHO",
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 103,
+    "ejercicio": "vuelos laterales",
+    "repeticiones": 3,
+    "categoria": "CUADRICEPS",
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 104,
+    "ejercicio": "vuelos laterales",
+    "repeticiones": 3,
+    "categoria": "ISQUIOS",
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 104,
+    "ejercicio": "vuelos laterales",
+    "repeticiones": 3,
+    "categoria": "BICEPS",
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 105,
+    "ejercicio": "vuelos laterales",
+    "repeticiones": 3,
+    "categoria": "TRICEPS",
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 106,
+    "ejercicio": "vuelos laterales",
+    "repeticiones": 3,
+    "categoria": "ISQUIOS",
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 107,
+    "ejercicio": "vuelos laterales",
+    "repeticiones": 3,
+    "categoria": "CUADRICEPS",
+    "rir": 2,
+    "rpe": 8
+  },
+  {
+    "dia_id": 108,
+    "ejercicio": "vuelos laterales",
+    "repeticiones": 3,
+    "categoria": "TRICEPS",
+    "rir": 2,
+    "rpe": 8
+  }
+]

@@ -4,6 +4,7 @@ const ACCEPTED_ORIGINS = [
   "http://localhost:8080",
   "http://localhost:7000",
   "https://tryning.com",
+  "http://localhost:5173",
 ];
 
 export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) =>

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "user_id": "FGPDJuBgIPTnTBbFChaEGQElSZk1",
+    "entrenador": "Yaco Recroa",
+    "descripcion": "Rutina enfocada a pecho. Incluye ejercicios de acondicionamiento físico y evaluaciones de salud para establecer una base sólida.",
+    "fecha_inicio": "13/9/2023",
+    "fecha_fin": "13/10/2023"
+  },
+  {
+    "id": 2,
+    "user_id": "FGPDJuBgnTBbFChaEGQElSZk1",
+    "entrenador": "Yaco Recroa",
+    "descripcion": "Rutina enfocada a pecho",
+    "fecha_inicio": "13/8/2023",
+    "fecha_fin": "13/9/2023"
+  }
+]

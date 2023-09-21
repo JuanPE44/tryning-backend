@@ -1,0 +1,20 @@
+[
+  {
+    "id": "FGPDJuBgIPTnTBbFChaEGQElSZk1",
+    "nombre": "Juan Peñalba",
+    "email": "juantandil123@gmail.com",
+    "imagen": "imagen1.jpg"
+  },
+  {
+    "id": "FGPDJuBgIPTnTBbFChaEGQ",
+    "nombre": "pedro",
+    "email": "pedro@gmail.com",
+    "imagen": "imagen1.jpg"
+  },
+  {
+    "id": "FGPIPTnTBbFChaEGQElSZk1",
+    "nombre": "nico",
+    "email": "nico@gmail.com",
+    "imagen": "imagen1.jpg"
+  }
+]
