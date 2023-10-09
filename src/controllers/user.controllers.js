@@ -1,5 +1,5 @@
 import { pool } from "../db.js";
-import { validateUser } from "../schemas/user.js";
+import { validateUser } from "../schemas/user.schema.js";
 
 export class UserController {
   constructor({ userModel }) {
@@ -30,13 +30,14 @@ export class UserController {
 
   create = async (req, res) => {
     const result = validateUser(req.body);
+    console.log(req.body);
 
     if (result.error) {
       return res.status(400).json({ error: result.error.message });
     }
 
     try {
-      const user = await this.userModel.createUser({ userData: result });
+      const user = await this.userModel.create({ userData: result.data });
       res.json(user);
     } catch (err) {
       res.status(500).json({ error: err.message });

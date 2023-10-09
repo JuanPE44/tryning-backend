@@ -1,4 +1,4 @@
-import { validatePlan } from "../schemas/plan.js";
+import { validatePlan } from "../schemas/plan.schema.js";
 
 export class PlanController {
   constructor({ planModel }) {
