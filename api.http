@@ -1,9 +1,8 @@
-POST  http://localhost:7000/api/users
-
+POST   http://localhost:7000/api/users
 Content-Type: "application/json"
 
 {
-  "id_user": "pedro4",
+  "id": "pedro4",
   "name": "pedro",
   "email": "pedro@gmail.com",
   "image": "https://awdawdada.jpg"

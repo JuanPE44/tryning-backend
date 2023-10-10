@@ -16,14 +16,20 @@ export class UserModel {
 
   static async create({ userData }) {
     const { id, name, email, image } = userData;
-    const username = generateRandomUsername();
-    console.log(username);
+    const username = generateRandomUsername({ name: "username" });
 
-    const [response] = await pool.query(
-      "INSERT INTO users (id_user, name, email, image, username) VALUES (?,?,?,?)",
-      [id, name, email, image, username]
-    );
+    const [rows] = await pool.query("SELECT * FROM users WHERE id_user = ?", [
+      id,
+    ]);
 
-    return response;
+    if (rows.length === 0) {
+      const [response] = await pool.query(
+        "INSERT INTO users (id_user, name, email, image, username) VALUES (?,?,?,?,?)",
+        [id, name, email, image, username]
+      );
+      return response;
+    } else {
+      return rows;
+    }
   }
 }
