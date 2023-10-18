@@ -14,6 +14,14 @@ export class TrainerModel {
     return response;
   }
 
+  static async deleteById({ idTrainer }) {
+    const [response] = await pool.query(
+      "DELETE FROM trainers WHERE id_trainer = ?",
+      [idTrainer]
+    );
+    return response;
+  }
+
   static async create({ trainerData }) {
     const { id, name, email, image } = trainerData;
     const username = generateRandomUsername({ name: "trainer" });

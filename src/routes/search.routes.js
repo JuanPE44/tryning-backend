@@ -6,5 +6,6 @@ export const createSearchRouter = ({ queriesModel }) => {
 
   const searchController = new SearchController({ queriesModel });
   searchRoutes.get("/", searchController.searchBy);
+  searchRoutes.get("/trainers", searchController.searchTrainers);
   return searchRoutes;
 };

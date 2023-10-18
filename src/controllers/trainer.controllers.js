@@ -15,10 +15,49 @@ export class TrainerController {
     }
   };
 
+  getRequests = async (req, res) => {
+    const { idTrainer } = req.params;
+
+    try {
+      const result = await this.trainerModel.getRequests({ idTrainer });
+      console.log(result);
+      res.json(result);
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  };
+
+  updateRequest = async (req, res) => {
+    const { idRequest, state } = req.query;
+
+    try {
+      const result = await this.trainerModel.updateRequest({
+        idRequest,
+        state,
+      });
+      console.log(result);
+      res.json(result);
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  };
+
   getById = async (req, res) => {
     const { idTrainer } = req.params;
     try {
       const trainer = await this.trainerModel.getById({ idTrainer });
+      if (trainer.length <= 0)
+        return res.status(404).json({ error: "No se encontró el User" });
+      res.json(trainer);
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  };
+
+  deleteById = async (req, res) => {
+    const { idTrainer } = req.params;
+    try {
+      const trainer = await this.trainerModel.deleteById({ idTrainer });
       if (trainer.length <= 0)
         return res.status(404).json({ error: "No se encontró el User" });
       res.json(trainer);

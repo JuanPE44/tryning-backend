@@ -18,4 +18,19 @@ export class SearchController {
       res.status(500).json({ error: err.message });
     }
   };
+
+  searchTrainers = async (req, res) => {
+    const { name, certificate, location } = req.query;
+    try {
+      const result = await this.queriesModel.searchTrainers({
+        name,
+        certificate,
+        location,
+      });
+      console.log(result);
+      res.json(result);
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  };
 }

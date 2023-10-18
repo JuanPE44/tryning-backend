@@ -8,8 +8,8 @@ export const createUserRouter = ({ userModel }) => {
 
   usersRoutes.get("/", userController.getAll);
   usersRoutes.post("/", userController.create);
+  usersRoutes.post("/sendRequest", userController.sendRequest);
   usersRoutes.get("/:idUser", userController.getById);
-  usersRoutes.patch("/:idUser", userController.update);
 
   return usersRoutes;
 };

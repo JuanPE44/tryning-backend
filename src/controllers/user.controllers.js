@@ -1,4 +1,3 @@
-import { pool } from "../db.js";
 import { validateUser } from "../schemas/user.schema.js";
 
 export class UserController {
@@ -44,39 +43,14 @@ export class UserController {
     }
   };
 
-  update = async (req, res) => {
-    const { idUser } = req.params;
-
-    const {
-      nombre,
-      apellido,
-      fecha_nacimiento,
-      genero,
-      direccionUser,
-      email,
-      telefono,
-    } = req.body;
+  sendRequest = async (req, res) => {
+    console.log(req.body);
+    const { idUser, idTrainer } = req.body;
     try {
-      const [response] = await pool.query(
-        "UPDATE Users SET nombre_User = IFNULL(?,nombre_User), apellido_User = IFNULL(?,apellido_User), edad_User = IFNULL(?,edad_User), genero_User = IFNULL(?,genero_User), direccion_User = IFNULL(?,direccion_User), email_User = IFNULL(?,email_User), telefono_User = IFNULL(?,telefono_User) WHERE id_User = ?",
-        [
-          nombre,
-          apellido,
-          fecha_nacimiento,
-          genero,
-          direccionUser,
-          email,
-          telefono,
-          idUser,
-        ]
-      );
-      if (response.affectedRows === 0)
-        return res.status(404).json({
-          mensaje: "User no encotrado",
-        });
-      res.sendStatus(204);
+      const user = await this.userModel.sendRequest({ idTrainer, idUser });
+      res.json(user);
     } catch (err) {
-      return res.status(500).json({ error: err.message });
+      res.status(500).json({ error: err.message });
     }
   };
 }
